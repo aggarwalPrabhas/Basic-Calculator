@@ -4,14 +4,20 @@ const logEnteries = [];
 
 // Helper Functions
 
+// -------User Input----------
+
 function getUserNumberInput() {
   return parseInt(userInput.value);
 }
+
+// ----------Calculation description--------
 
 function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
   const calDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
   outputResult(currentResult, calDescription);
 }
+
+// ---------Write to Log--------
 
 function writeToLog(
   operationIdentifier,
